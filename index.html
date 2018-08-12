@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Cake Or Abs Fitness
+		</title>
+		<script src="scripts/angular.js"></script>
+		<script src="scripts/angular-route.js"></script>
+		<script src="scripts/main/mainApp.js"></script>
+		<script src="scripts/main/mainController.js"></script>
+		<script src="scripts/workout/workoutApp.js"></script>
+		<script src="scripts/workout/workoutController.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/customStyles.css">
+		<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<div id="mainContainer" class="container-fluid" ng-app="mainApp" ng-controller="mainController">
+
+			<!-- Main Header -->
+			<div id="header">
+
+				<!-- Navbar -->
+				<nav id="navigationBar" class="navbar navbar-default">
+					<div class="container-fluid">
+						<div id="brandHeader" class="navbar-header">
+							<a id="brandName" class="navbar-brand" href="index.html">cake or abs fitness</a>
+						</div>
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#/workoutPlans">Workout Plans</a>
+							</li>
+							<li>
+								<a href="#">About</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+			</div>
+
+			<!-- Main Body -->
+			<div id="homeContent" class="row">
+				<div class="col-md-12">
+					<div ng-view>
+						<!-- View -->
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>

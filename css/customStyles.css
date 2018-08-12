@@ -1,0 +1,89 @@
+body {
+	font-family: 'Assistant', sans-serif;
+	height: 100%;
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#navigationBar {
+	background: #1c81bc;
+	color: white;
+	padding-top: 5px;
+}
+
+#navigationBar a{
+	color: white;
+}
+
+#mainContainer {
+	height: 100%;
+}
+
+#brandName {
+	font-size: 2em;
+	letter-spacing: -1px;
+}
+
+#workoutPlansHeader {
+	text-align: center;
+	font-size: 2em;
+	color: #333333;
+}
+
+.workoutPlansBoxes {
+	background-size: cover;
+	cursor: pointer;
+}
+
+.workoutPlansTitle {
+	padding-top: 300px;
+	width: 100%;
+}
+
+.workoutPlansTitleLink {
+	background: rgba(0,0,0,0.5);
+	color: white;
+	font-size: 3em;
+}
+
+.workoutDayBox {
+	width: 100%;
+	max-width: 1000px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.workoutDayTitle {
+	color: #333333;
+	font-size: 2em;
+}
+
+.workoutDayDetails {
+	color: #444444;
+	margin: 5px;
+	padding: 5px;
+	border-top: 1px solid #aaaaaa;
+}
+
+.workoutName {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.workoutDescription {
+	font-size: 1.3em;
+}
+.workoutReps {
+	font-style: italic;
+	font-size: 1.3em;
+}
+
+.workoutImage {
+	width: 90%;
+	max-width: 500px;
+	height: auto;
+}

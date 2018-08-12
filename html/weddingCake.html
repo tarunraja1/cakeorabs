@@ -1,0 +1,19 @@
+<div class="view-area" ng-app="workoutApp" ng-controller="workoutController">
+
+	<div class="col-md-12">
+		
+	</div>
+
+	<div class="col-md-12">
+		<div ng-repeat="x in weddingCake" class="workoutDayBox">
+			<h2 class="workoutDayTitle">{{x.day}}</h2>
+			<div ng-repeat="y in x.workouts" class="workoutDayDetails clearfix">
+				<div class="workoutName">{{y.name}}</div>
+				<div ng-if="y.imgUrl != ''"><img ng-src="images/{{y.imgUrl}}" class="workoutImage"></div>
+				<div class="workoutDescription">{{y.description}}</div>
+				<div class="workoutReps">{{y.reps}}</div>
+			</div>
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,18 @@
+<div class="view-area" ng-app="workoutApp" ng-controller="workoutController">
+
+	<div class="col-md-12" id="workoutPlansHeader">
+		Choose a workout plan below!
+	</div>
+	<div id="workoutPlansLinks">
+		<div ng-repeat="x in workoutPlans" class="col-md-3">
+			<div class="workoutPlansTitle workoutPlansBoxes"
+				ng-style="{'background-image': 'url(/images/'+ x.imgUrl + ')'}"
+				ng-click="openLink(x.url)">
+				<div class="workoutPlansTitleLink">
+					{{x.name}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

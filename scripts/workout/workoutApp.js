@@ -1,0 +1,1 @@
+var workoutApp = angular.module("workoutApp", ['mainApp']);
